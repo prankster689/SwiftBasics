@@ -1,0 +1,1 @@
+type inference language : it can automatically identify the data type of an array based on its value

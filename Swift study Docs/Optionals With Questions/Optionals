@@ -1,0 +1,76 @@
+OPTIONAL:
+
+simple code:
+class xmaspresent
+{
+    func sup()->Int
+
+    {
+     return Int.random(in: 1...30)   
+    }
+    
+    
+}
+
+let present = xmaspresent()
+let wow = present.sup()
+print(wow)
+
+----------------------------------------------------------------------------------
+adding optional variable present:
+
+
+let present:xmaspresent? = xmaspresent()
+
+if present != nil
+{
+let wow = present!.sup()
+print(wow)
+}
+added ? to datatype xmaspresent to make it optional 
+unwrapping it using ! 
+---------------------------------------------------------------------------------------
+
+Optional Binding Check:
+
+class xmaspresent
+{
+    func sup()->Int
+
+    {
+     return Int.random(in: 1...30)   
+    }
+    
+    
+}
+
+let present:xmaspresent? = xmaspresent()
+
+if let actpresent = present {
+    print(actpresent.sup())
+}
+
+Here we used "if let " 
+in this case checks if present is nil or not and then enters block
+---------------------------------------------------------------------------------------
+optional chaining
+
+
+class xmaspresent
+{
+    func sup()->Int
+
+    {
+     return Int.random(in: 1...30)   
+    }
+    
+    
+}
+
+let present:xmaspresent? = xmaspresent()
+
+print(present?.sup())
+the ? after present checks if it is nil or not
+
+---------------------------------------------------------------------------------------
+

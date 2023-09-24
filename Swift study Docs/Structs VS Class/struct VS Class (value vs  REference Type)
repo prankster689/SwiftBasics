@@ -1,0 +1,20 @@
+struct VS Class 
+https://abhimuralidharan.medium.com/difference-between-a-struct-and-a-class-in-swift-53e08df73714
+
+valuew vs reference:
+
+https://abhimuralidharan.medium.com/difference-between-value-type-and-a-reference-type-in-ios-swift-18cb5145ad7a
+
+Whenever you create an enum or a struct , it is a value type 
+
+and a Class is a reference type.
+
+Value Type: Struct , Enum
+Reference Type: Class
+
+
+When you pass a class object around your program, you are actually passing a reference to that object, so different parts of your program can share and modify your object. 
+
+When you pass a structure [ or enum] around your program, what gets passes around is a copy of the structure. So modifications to structures don’t get shared.
+
+One of the major benefits of value types is that they are thread-safe not requiring any synchronization.

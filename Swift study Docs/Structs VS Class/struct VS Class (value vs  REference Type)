@@ -101,3 +101,19 @@ When to use structs?
 * Structs help you track a portion of your code since they are value types. We only need to focus to the area where the struct is used, because there is not any object that points to struct’s address and manipulate it. Otherwise we need to look at possible places that may change our object’s value.
 * Apart from classes, we should use structs when we don’t control identity. Think about fetching data from server, there may be same objects but since we are not controlling identity, we better use structs.
 
+
+
+
+simplified
+
+Class
+* Reference Type: Imagine a class like a shared document. When many people open the same document, they're all looking at the same thing. If someone makes changes, everyone sees those changes because they're looking at the same paper.
+* Inheritance: Classes can have children, like a family tree. A child can inherit traits from their parents. For example, a "Car" class can have a child class like "SportsCar" that inherits features from the parent class.
+* Mutable: You can change a class after you create it. It's like being able to erase and rewrite on a piece of paper.
+Structs
+* Value Type: Think of a struct like a personal notebook. When you copy it, you get your own new notebook. If you make notes in your notebook, it doesn't affect someone else's notebook because they each have their own separate pages.
+* No Inheritance: Structs can't have children or parents. Each struct is on its own; they can't inherit anything from other structs.
+* Immutable: Once you create a struct, you can't change it. It's like having a notebook with pages that can't be erased or rewritten.
+If you want to create something with shared properties that many parts of your code can use and change, use a class. If you want something individual that can't be changed after it's made, use a struct. Choose the one that fits your needs.
+
+
